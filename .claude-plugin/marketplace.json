@@ -11,7 +11,7 @@
     {
       "name": "canvas",
       "source": "./canvas",
-      "description": "Spawn and control interactive terminal displays (calendars, documents, flights, kanban boards) with real-time IPC communication",
+      "description": "Spawn and control interactive terminal displays (calendars, documents, flights) with real-time IPC communication",
       "version": "0.1.0",
       "strict": false
     }

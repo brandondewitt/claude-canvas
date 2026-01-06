@@ -2,7 +2,7 @@
 name: canvas
 description: |
   **The primary skill for terminal TUI components.** Covers spawning, controlling, and interacting with terminal canvases.
-  Use when displaying calendars, documents, flight bookings, kanban boards, or other interactive TUIs.
+  Use when displaying calendars, documents, or flight bookings.
 ---
 
 # Canvas TUI Toolkit
@@ -42,7 +42,7 @@ bun run src/cli.ts spawn [kind] --scenario [name] --config '[json]'
 ```
 
 **Parameters:**
-- `kind`: Canvas type (calendar, document, flight, kanban, imagine)
+- `kind`: Canvas type (calendar, document, flight)
 - `--scenario`: Interaction mode (e.g., display, meeting-picker, edit)
 - `--config`: JSON configuration for the canvas
 - `--id`: Optional canvas instance ID for IPC
