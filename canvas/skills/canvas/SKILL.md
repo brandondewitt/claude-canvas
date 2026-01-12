@@ -25,6 +25,10 @@ Try asking Claude things like:
 - "Find flights from SFO to Denver next Friday"
 - "Book me a window seat on the morning flight"
 
+**Diff:**
+- "Show me the git diff"
+- "Display the changes I've made"
+
 ## Overview
 
 Canvas provides interactive terminal displays (TUIs) that Claude can spawn and control. Each canvas type supports multiple scenarios for different interaction modes.
@@ -36,6 +40,7 @@ Canvas provides interactive terminal displays (TUIs) that Claude can spawn and c
 | `calendar` | Display calendars, pick meeting times | `display`, `meeting-picker` |
 | `document` | View/edit markdown documents | `display`, `edit`, `email-preview` |
 | `flight` | Flight comparison and seat selection | `booking` |
+| `diff` | View git diffs with Zed-style formatting | `view` |
 
 ## Quick Start
 
@@ -113,3 +118,4 @@ if (result.success && result.data) {
 | `calendar` | Calendar display and meeting picker details |
 | `document` | Document rendering and text selection |
 | `flight` | Flight comparison and seat map details |
+| `diff` | Git diff viewing with Zed-style formatting |

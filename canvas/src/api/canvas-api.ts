@@ -11,6 +11,7 @@ import type {
   DocumentConfig,
   DocumentSelection,
 } from "../scenarios/types";
+import type { DiffConfig, DiffResult } from "../canvases/diff/types";
 
 export interface CanvasResult<T = unknown> {
   success: boolean;
@@ -210,6 +211,27 @@ export async function editDocument(
   return spawnCanvasWithIPC<DocumentConfig, DocumentSelection>(
     "document",
     "edit",
+    config,
+    options
+  );
+}
+
+// ============================================
+// Diff Canvas API
+// ============================================
+
+/**
+ * Display a git diff with Zed-style formatting
+ * Accepts raw git diff output and displays with syntax highlighting,
+ * collapsible hunks, and keyboard navigation
+ */
+export async function viewDiff(
+  config: DiffConfig,
+  options?: SpawnOptions
+): Promise<CanvasResult<DiffResult>> {
+  return spawnCanvasWithIPC<DiffConfig, DiffResult>(
+    "diff",
+    "view",
     config,
     options
   );
