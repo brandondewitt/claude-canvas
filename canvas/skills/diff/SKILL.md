@@ -1,3 +1,10 @@
+---
+name: diff
+context: fork
+description: |
+  View git diffs with Zed editor-style formatting in an interactive terminal canvas.
+---
+
 # Diff Canvas
 
 Display git diffs with Zed editor-style formatting in an interactive terminal canvas.
